@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0",
+    "es2017"
+  ],
+  "plugins": [
+    "./webpack_rootify.js",
+    ["transform-jsx", { "debug": true, "module": "ioui/jsx", "useVariables": true }],
+    ["module-resolver", {
+      "root": ["./"]
+    }]
+  ]
+}
